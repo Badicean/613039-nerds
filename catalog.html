@@ -18,26 +18,27 @@
 				  </ul>
 				  <a class="main-menu-cart" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>КОРЗИНА</a>
 				</nav>
-			  <h1 class="header-title">Магазин готовых шаблонов</h1>
+				<h1 class="header-title">Магазин готовых шаблонов</h1>
 	    </header>
       <main class="container">
+				<h2 class="visually-hidden">Фильтр выбора шаблонов</h2>
         <form action="https://echo.htmlacademy.ru" method="post">
 			    <fieldset>
 					  <legend>СТОИМОСТЬ:</legend>
 				  </fieldset>
 					<fieldset>
 					  <legend>СЕТКА:</legend>
-					  <label><input type="radio" name="grid" value="adaptive" checked> Адаптивная</label>
-					  <label><input type="radio" name="grid" value="fixed"> Фиксированная</label>
-					  <label><input type="radio" name="grid" value="rubber"> Резиновая</label>
+					  <label for="grid-adaptive"><input type="radio" name="grid" id="grid-adaptive" value="adaptive" checked>Адаптивная</label>
+					  <label for="grid-fixed"><input type="radio" name="grid" id="grid-fixed" value="fixed">Фиксированная</label>
+					  <label for="grid-rubber"><input type="radio" name="grid" id="grid-rubber" value="rubber">Резиновая</label>
 				 </fieldset>
 				 <fieldset>
 	          <legend>ОСОБЕННОСТИ:</legend>
-					  <label><input type="checkbox" name="features1" value="slider"> Слайдер</label>
-				    <label><input type="checkbox" name="features2" value="advantages"> Блок преимуществ</label>
-					  <label><input type="checkbox" name="features3" value="news"> Новости</label>
-            <label><input type="checkbox" name="features4" value="gallery"> Галерея</label>
-            <label><input type="checkbox" name="features5" value="basket"> Корзина</label>
+					  <label for="features-slider"><input type="checkbox" name="slider" id="features-slider">Слайдер</label>
+				    <label for="features-advantages"><input type="checkbox" name="advantages" id="features-advantages">Блок преимуществ</label>
+					  <label for="features-news"><input type="checkbox" name="news" id="features-news">Новости</label>
+            <label for="features-gallery"><input type="checkbox" name="gallery" id="features-gallery">Галерея</label>
+            <label for="features-basket"><input type="checkbox" name="basket" id="features-basket">Корзина</label>
 				 </fieldset>
 				   <div class="buttons">
             <input type="submit" value="ПОКАЗАТЬ">
@@ -56,6 +57,7 @@
 	 			   </ul>
 				 </div>
         <section class="catalog">
+					<h2 class="visually-hidden">Наши шаблоны</h2>
 					<div class="templates">
 						  <ul class="pages">
 							  <li class="page"><img src="img/img-sedona.jpg" width="360" height="576" alt="sedona"></li>
@@ -96,24 +98,19 @@
 			  <p>Напишите нам</p>
 			</div>
 			<div class="feedback-forms">
-			  <form action="#" method="post" name="feedback-write">
-				  <div class="feedback-close">
-					  <input class="feedback-close" type="button" id="btn-close">
+		   <form action="https://echo.htmlacademy.ru" method="post" name="feedback-write">
+				  <button  class="modal-close" type="button" aria-label="close">Х</button>
+					<div class="feedback-forms-item">
+					  <label for="feedback-name">Ваше имя:<input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" required></label>
 					</div>
 					<div class="feedback-forms-item">
-					  <label for="feedback-name">Ваше имя:</label>
-						<input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" required>
+					  <label for="feedback-email">Ваш e-mail:<input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required></label>
 					</div>
 					<div class="feedback-forms-item">
-					  <label for="feedback-email">Ваш e-mail:</label>
-						<input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
+						<label for="feedback-text">Текст письма:<textarea name="feedback-text" id="feedback-text" cols="30" rows="5" placeholder="В свободной форме" required></textarea></label>
 					</div>
 					<div class="feedback-forms-item">
-					  <label for="feedback-text">Текст письма:</label>
-						<textarea name="feedback-text" id="feedback-text" cols="30" rows="5" placeholder="В свободной форме" required></textarea>
-					</div>
-					<div class="feedback-forms-item">
-					  <button class="btn-send" type="submit">Отправить</button>
+					  <button class="btn" type="submit" value="Отправить">Отправить</button>
 					</div>
 				</form>
 			</div>
