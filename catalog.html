@@ -16,9 +16,7 @@
 				    <li><a href="catalog.html">МАГАЗИН</a></li>
 				    <li><a href="#">КОНТАКТЫ</a></li>
 				  </ul>
-
-						<a class="main-menu-cart" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>КОРЗИНА</a>
-
+				  <a class="main-menu-cart" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>КОРЗИНА</a>
 				</nav>
 			  <h1 class="header-title">Магазин готовых шаблонов</h1>
 	    </header>
@@ -26,8 +24,6 @@
         <form action="https://echo.htmlacademy.ru" method="post">
 			    <fieldset>
 					  <legend>СТОИМОСТЬ:</legend>
-
-					   <!-- форма выбора диапазона от и до ------>
 				  </fieldset>
 					<fieldset>
 					  <legend>СЕТКА:</legend>
@@ -61,26 +57,24 @@
 				 </div>
         <section class="catalog">
 					<div class="templates">
-						  <ul class="page">
-							  <li class="page-sedona"><img src="img/img-sedona.jpg" width="360" height="576" alt="sedona"></li>
-							  <li class="page-pink"><img src="img/img-pink.jpg" width="360" height="576" alt="pink"></li>
-							  <li class="page-barbershop"><img src="img/img-barbershop.jpg" width="360" height="576" alt="barbershop"></li>
-							  <li class="page-mishka"><img src="img/img-mishka.jpg" width="360" height="576" alt="mishka"></li>
-							  <li class="page-aplus"><img src="img/img-aplus.jpg" width="360" height="576" alt="aplus"></li>
-							  <li class="page-kvast"><img src="img/img-kvast.jpg" width="360" height="576" alt="kvast"></li>
+						  <ul class="pagesss">
+							  <li class="page"><img src="img/img-sedona.jpg" width="360" height="576" alt="sedona"></li>
+							  <li class="page"><img src="img/img-pink.jpg" width="360" height="576" alt="pink"></li>
+							  <li class="page"><img src="img/img-barbershop.jpg" width="360" height="576" alt="barbershop"></li>
+							  <li class="page"><img src="img/img-mishka.jpg" width="360" height="576" alt="mishka"></li>
+							  <li class="page"><img src="img/img-aplus.jpg" width="360" height="576" alt="aplus"></li>
+							  <li class="page"><img src="img/img-kvast.jpg" width="360" height="576" alt="kvast"></li>
 						  </ul>
 					</div>
             <ul class="pagination-list">
-              <li class="pagination-item pagination-item-current">1</li>
+              <li class="pagination-item pagination-item-current"><a>1</a></li>
               <li class="pagination-item"><a href="#">2</a></li>
               <li class="pagination-item"><a href="#">3</a></li>
               <li class="pagination-item"><a href="#">СЛЕДУЮЩАЯ</a></li>
-              </ul>
+            </ul>
         </section>
 	    </main>
 			<footer class="main-footer">
-
-					 <!-- карта ------>
  				  <div class="map-block">
 						<p class="map-block-map"><img src="img/map-marker.png" width="1440" height="416" alt="map"></p>
  					  <h2 class="map-block-title">NERDS DESIGN STUDIO</h2>
@@ -99,5 +93,30 @@
  				  </div>
 
  		  </footer>
+			<div class="feedback">
+					<p>Напишите нам</p>
+			</div>
+			<div class="feedback-forms">
+					<form action="#" method="post" name="feedback-write">
+							<div class="feedback-close">
+									<input class="feedback-close" type="button" id="btn-close">
+							</div>
+							<div class="feedback-forms-item">
+									<label for="feedback-name">Ваше имя:</label>
+									<input type="text" name="name" id="feedback-name" placeholder="Имя Фамилия" required>
+							</div>
+							<div class="feedback-forms-item">
+									<label for="feedback-email">Ваш e-mail:</label>
+									<input type="email" name="feedback-email" id="feedback-email" placeholder="email@example.com" required>
+							</div>
+							<div class="feedback-forms-item">
+									<label for="feedback-text">Текст письма:</label>
+									<textarea name="feedback-text" id="feedback-text" cols="30" rows="5" placeholder="В свободной форме" required></textarea>
+							</div>
+							<div class="feedback-forms-item">
+									<button class="btn-send" type="submit">Отправить</button>
+							</div>
+					</form>
+			</div>
 	  </body>
 	</html>
