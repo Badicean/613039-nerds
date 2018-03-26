@@ -6,16 +6,32 @@ body{
      font-size: 16px;
      line-height: 24px;
      font-weight: 400;
-     color:#a6a6a6;
+     color:#283136;
      text-transform: none;
 }
  a {
      text-decoration: none;
 }
+ ul, p, h1, h2, h3 {
+     margin: 0;
+     padding: 0;
+}
+ ul {
+     list-style: none;
+}
+ label {
+     display: block;
+}
+ img {
+     max-width: 100%;
+     height: auto;
+}
  .main-navigation {
      font-size: 16px;
      line-height: 30px;
+     font-weight: 500;
      color: #000000;
+     text-transform: uppercase;
 }
  .main-header-logo:hover {
      opacity: 0.8;
@@ -23,21 +39,19 @@ body{
  .main-header-logo:active {
      opacity: 0.3;
 }
- .site-navigation {
+ .site-navigation, .main-menu-cart {
      list-style: none;
 }
  .site-navigation a, .main-menu-cart a {
      color: #000000;
+     outline: none;
 }
  .site-navigation a:focus, .site-navigation a:hover, .main-menu-cart a:focus, .main-menu-cart a:hover {
      color: #fb565a;
 }
  .site-navigation a:active, .main-menu-cart a:active {
-     color: #a6a6a6;
-}
- img {
-     max-width: 100%;
-     height: auto;
+     color: #000000;
+     opacity: 0.3;
 }
  .visually-hidden:not(:focus):not(:active),input[type="checkbox"].visually-hidden,input[type="radio"].visually-hidden {
      position: absolute;
@@ -56,6 +70,7 @@ body{
      line-height: 30px;
      font-weight: bold;
      color: #000000;
+     text-transform: uppercase;
 }
  .offer p {
      font-size: 16px;
@@ -73,6 +88,7 @@ body{
      text-decoration: none;
      border-radius: 3px;
      border: none;
+     text-transform: uppercase;
 }
  .btn-red {
      background-color: #fb565a;
@@ -125,6 +141,7 @@ body{
      font-size: 16px;
      line-height: 24px;
      color: #283136;
+     text-transform: uppercase;
 }
  .detail p {
      font-size: 16px;
@@ -132,7 +149,6 @@ body{
      color: #283136;
 }
  .detail-list li {
-     list-style: none;
      font-size: 16px;
      line-height: 24px;
      color: #283136;
@@ -142,6 +158,7 @@ body{
      font-size: 16px;
      line-height: 24px;
      color: #000000;
+     text-transform: uppercase;
 }
  .detail-right-column th {
      font-weight: bold;
@@ -169,21 +186,7 @@ body{
      width: 261px;
      margin-top: 49px;
 }
- .filter-item legend {
-     font-size: 18px;
-     line-height: 30px;
-     text-transform: uppercase;
-     font-weight: bold;
-     color: #000000;
-}
- .filter-grid legend {
-     font-size: 18px;
-     line-height: 30px;
-     text-transform: uppercase;
-     font-weight: bold;
-     color: #000000;
-}
- .filter-features legend {
+ legend {
      font-size: 18px;
      line-height: 30px;
      text-transform: uppercase;
@@ -278,6 +281,7 @@ body{
 }
  .buttons input:hover, .buttons input:focus {
      background-color: #dfdfdf;
+     cursor: pointer;
 }
  .buttons input:active {
      color: rgba(0, 0, 0, 0.3);
@@ -291,11 +295,13 @@ body{
      font-size: 18px;
      line-height: 18px;
      color: #000000;
+     text-transform: uppercase;
 }
  .select a {
      font-size: 14px;
      line-height: 18px;
      color: #000000;
+     text-transform: uppercase;
 }
  .price-options a {
      color: #000000;
@@ -309,13 +315,11 @@ body{
  .price-options a:active, .price-options a:visited, .select a:active, .select a:visited {
      opacity: 1.0 ;
 }
- .catalog ul {
-     list-style: none;
-}
  .map-block h2 {
      font-size: 18px;
      line-height: 30px;
      color: #000000;
+     text-transform: uppercase;
 }
  .map-block p {
      font-size: 16px;
@@ -333,6 +337,7 @@ body{
      text-decoration: none;
      border-radius: 3px;
      border: none;
+     text-transform: uppercase;
 }
  .map-btn {
      background-color: #fb565a;
