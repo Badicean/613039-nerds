@@ -15,7 +15,7 @@
         <nav class="main-navigation">
             <a title="логотип вебстудии Нердс" class="main-header-logo-index" tabindex="0"><img src="img/nerds-logo.svg" width="160" height="65" alt="Нёрдс"></a>
             <ul class="site-navigation">
-                <li><a tabindex="0">Студия</a></li>
+                <li><a href="#">Студия</a></li>
                 <li><a href="#">Клиенты</a></li>
                 <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="#">Контакты</a></li>
@@ -27,15 +27,18 @@
     </header>
 
 
-    <main class="main container">
+    <main class="main-container">
 
         <section class="slider">
             <div class="container">
                 <h2 class="visually-hidden">Преимущества</h2>
+                <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+                <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+                <input class="visually-hidden" type="radio" id="product-3" name="toggle">
                 <div class="slider-controls">
-                    <i></i>
-                    <i></i>
-                    <i class="active"></i>
+                    <label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+                    <label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+                    <label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
                 </div>
                 <ul class="slider-list">
                     <li class="slider-item">
@@ -46,7 +49,7 @@
                     <li class="slider-item">
                         <h3>Любим математику как никто другой</h3>
                         <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                        <a class="slider-item-button button" href="#">Узнать больше</a>https://up.htmlacademy.ru/assets/htmlcss/demo/htmlcss19/slider-nerds/#
+                        <a class="slider-item-button button" href="#">Узнать больше</a>
                     </li>
                     <li class="slider-item">
                         <h3>Только ночь,<br> только хардкор</h3>
